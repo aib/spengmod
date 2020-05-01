@@ -2,4 +2,482 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
 	</PropertyGroup>
+
+	<PropertyGroup>
+		<GameDir>/home/aib/.local/share/Steam/SteamApps/common/SpaceEngineers</GameDir>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="DirectShowLib.dll">
+			<HintPath>$(GameDir)/Bin64/DirectShowLib.dll</HintPath>
+		</Reference>
+		<Reference Include="EmptyKeys.UserInterface.Core.dll">
+			<HintPath>$(GameDir)/Bin64/EmptyKeys.UserInterface.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="EmptyKeys.UserInterface.Debug.dll">
+			<HintPath>$(GameDir)/Bin64/EmptyKeys.UserInterface.Debug.dll</HintPath>
+		</Reference>
+		<Reference Include="EmptyKeys.UserInterface.dll">
+			<HintPath>$(GameDir)/Bin64/EmptyKeys.UserInterface.dll</HintPath>
+		</Reference>
+		<Reference Include="GameAnalytics.Mono.dll">
+			<HintPath>$(GameDir)/Bin64/GameAnalytics.Mono.dll</HintPath>
+		</Reference>
+		<Reference Include="HavokWrapper.dll">
+			<HintPath>$(GameDir)/Bin64/HavokWrapper.dll</HintPath>
+		</Reference>
+		<Reference Include="Microsoft.CodeAnalysis.CSharp.dll">
+			<HintPath>$(GameDir)/Bin64/Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="Microsoft.CodeAnalysis.dll">
+			<HintPath>$(GameDir)/Bin64/Microsoft.CodeAnalysis.dll</HintPath>
+		</Reference>
+		<Reference Include="Microsoft.Win32.Primitives.dll">
+			<HintPath>$(GameDir)/Bin64/Microsoft.Win32.Primitives.dll</HintPath>
+		</Reference>
+		<Reference Include="NLog.dll">
+			<HintPath>$(GameDir)/Bin64/NLog.dll</HintPath>
+		</Reference>
+		<Reference Include="ProtoBuf.Net.Core.dll">
+			<HintPath>$(GameDir)/Bin64/ProtoBuf.Net.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="ProtoBuf.Net.dll">
+			<HintPath>$(GameDir)/Bin64/ProtoBuf.Net.dll</HintPath>
+		</Reference>
+		<Reference Include="RecastDetourWrapper.dll">
+			<HintPath>$(GameDir)/Bin64/RecastDetourWrapper.dll</HintPath>
+		</Reference>
+		<Reference Include="RestSharp.dll">
+			<HintPath>$(GameDir)/Bin64/RestSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="Sandbox.Common.dll">
+			<HintPath>$(GameDir)/Bin64/Sandbox.Common.dll</HintPath>
+		</Reference>
+		<Reference Include="Sandbox.Game.XmlSerializers.dll">
+			<HintPath>$(GameDir)/Bin64/Sandbox.Game.XmlSerializers.dll</HintPath>
+		</Reference>
+		<Reference Include="Sandbox.Game.dll">
+			<HintPath>$(GameDir)/Bin64/Sandbox.Game.dll</HintPath>
+		</Reference>
+		<Reference Include="Sandbox.Graphics.dll">
+			<HintPath>$(GameDir)/Bin64/Sandbox.Graphics.dll</HintPath>
+		</Reference>
+		<Reference Include="Sandbox.RenderDirect.dll">
+			<HintPath>$(GameDir)/Bin64/Sandbox.RenderDirect.dll</HintPath>
+		</Reference>
+		<Reference Include="SharpDX.D3DCompiler.dll">
+			<HintPath>$(GameDir)/Bin64/SharpDX.D3DCompiler.dll</HintPath>
+		</Reference>
+		<Reference Include="SharpDX.DXGI.dll">
+			<HintPath>$(GameDir)/Bin64/SharpDX.DXGI.dll</HintPath>
+		</Reference>
+		<Reference Include="SharpDX.Desktop.dll">
+			<HintPath>$(GameDir)/Bin64/SharpDX.Desktop.dll</HintPath>
+		</Reference>
+		<Reference Include="SharpDX.Direct3D11.dll">
+			<HintPath>$(GameDir)/Bin64/SharpDX.Direct3D11.dll</HintPath>
+		</Reference>
+		<Reference Include="SharpDX.DirectInput.dll">
+			<HintPath>$(GameDir)/Bin64/SharpDX.DirectInput.dll</HintPath>
+		</Reference>
+		<Reference Include="SharpDX.XAudio2.dll">
+			<HintPath>$(GameDir)/Bin64/SharpDX.XAudio2.dll</HintPath>
+		</Reference>
+		<Reference Include="SharpDX.dll">
+			<HintPath>$(GameDir)/Bin64/SharpDX.dll</HintPath>
+		</Reference>
+		<Reference Include="SixLabors.Core.dll">
+			<HintPath>$(GameDir)/Bin64/SixLabors.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="SixLabors.ImageSharp.dll">
+			<HintPath>$(GameDir)/Bin64/SixLabors.ImageSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="SpaceEngineers.Game.dll">
+			<HintPath>$(GameDir)/Bin64/SpaceEngineers.Game.dll</HintPath>
+		</Reference>
+		<Reference Include="SpaceEngineers.ObjectBuilders.XmlSerializers.dll">
+			<HintPath>$(GameDir)/Bin64/SpaceEngineers.ObjectBuilders.XmlSerializers.dll</HintPath>
+		</Reference>
+		<Reference Include="SpaceEngineers.ObjectBuilders.dll">
+			<HintPath>$(GameDir)/Bin64/SpaceEngineers.ObjectBuilders.dll</HintPath>
+		</Reference>
+		<Reference Include="Steamworks.NET.dll">
+			<HintPath>$(GameDir)/Bin64/Steamworks.NET.dll</HintPath>
+		</Reference>
+		<Reference Include="System.AppContext.dll">
+			<HintPath>$(GameDir)/Bin64/System.AppContext.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Buffers.dll">
+			<HintPath>$(GameDir)/Bin64/System.Buffers.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Collections.Concurrent.dll">
+			<HintPath>$(GameDir)/Bin64/System.Collections.Concurrent.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Collections.Immutable.dll">
+			<HintPath>$(GameDir)/Bin64/System.Collections.Immutable.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Collections.NonGeneric.dll">
+			<HintPath>$(GameDir)/Bin64/System.Collections.NonGeneric.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Collections.Specialized.dll">
+			<HintPath>$(GameDir)/Bin64/System.Collections.Specialized.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Collections.dll">
+			<HintPath>$(GameDir)/Bin64/System.Collections.dll</HintPath>
+		</Reference>
+		<Reference Include="System.ComponentModel.Annotations.dll">
+			<HintPath>$(GameDir)/Bin64/System.ComponentModel.Annotations.dll</HintPath>
+		</Reference>
+		<Reference Include="System.ComponentModel.EventBasedAsync.dll">
+			<HintPath>$(GameDir)/Bin64/System.ComponentModel.EventBasedAsync.dll</HintPath>
+		</Reference>
+		<Reference Include="System.ComponentModel.Primitives.dll">
+			<HintPath>$(GameDir)/Bin64/System.ComponentModel.Primitives.dll</HintPath>
+		</Reference>
+		<Reference Include="System.ComponentModel.TypeConverter.dll">
+			<HintPath>$(GameDir)/Bin64/System.ComponentModel.TypeConverter.dll</HintPath>
+		</Reference>
+		<Reference Include="System.ComponentModel.dll">
+			<HintPath>$(GameDir)/Bin64/System.ComponentModel.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Console.dll">
+			<HintPath>$(GameDir)/Bin64/System.Console.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Data.Common.dll">
+			<HintPath>$(GameDir)/Bin64/System.Data.Common.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Data.SQLite.dll">
+			<HintPath>$(GameDir)/Bin64/System.Data.SQLite.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Diagnostics.Contracts.dll">
+			<HintPath>$(GameDir)/Bin64/System.Diagnostics.Contracts.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Diagnostics.Debug.dll">
+			<HintPath>$(GameDir)/Bin64/System.Diagnostics.Debug.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Diagnostics.FileVersionInfo.dll">
+			<HintPath>$(GameDir)/Bin64/System.Diagnostics.FileVersionInfo.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Diagnostics.Process.dll">
+			<HintPath>$(GameDir)/Bin64/System.Diagnostics.Process.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Diagnostics.StackTrace.dll">
+			<HintPath>$(GameDir)/Bin64/System.Diagnostics.StackTrace.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Diagnostics.TextWriterTraceListener.dll">
+			<HintPath>$(GameDir)/Bin64/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Diagnostics.Tools.dll">
+			<HintPath>$(GameDir)/Bin64/System.Diagnostics.Tools.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Diagnostics.TraceSource.dll">
+			<HintPath>$(GameDir)/Bin64/System.Diagnostics.TraceSource.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Diagnostics.Tracing.dll">
+			<HintPath>$(GameDir)/Bin64/System.Diagnostics.Tracing.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Drawing.Primitives.dll">
+			<HintPath>$(GameDir)/Bin64/System.Drawing.Primitives.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Dynamic.Runtime.dll">
+			<HintPath>$(GameDir)/Bin64/System.Dynamic.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Globalization.Calendars.dll">
+			<HintPath>$(GameDir)/Bin64/System.Globalization.Calendars.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Globalization.Extensions.dll">
+			<HintPath>$(GameDir)/Bin64/System.Globalization.Extensions.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Globalization.dll">
+			<HintPath>$(GameDir)/Bin64/System.Globalization.dll</HintPath>
+		</Reference>
+		<Reference Include="System.IO.Compression.ZipFile.dll">
+			<HintPath>$(GameDir)/Bin64/System.IO.Compression.ZipFile.dll</HintPath>
+		</Reference>
+		<Reference Include="System.IO.Compression.dll">
+			<HintPath>$(GameDir)/Bin64/System.IO.Compression.dll</HintPath>
+		</Reference>
+		<Reference Include="System.IO.FileSystem.DriveInfo.dll">
+			<HintPath>$(GameDir)/Bin64/System.IO.FileSystem.DriveInfo.dll</HintPath>
+		</Reference>
+		<Reference Include="System.IO.FileSystem.Primitives.dll">
+			<HintPath>$(GameDir)/Bin64/System.IO.FileSystem.Primitives.dll</HintPath>
+		</Reference>
+		<Reference Include="System.IO.FileSystem.Watcher.dll">
+			<HintPath>$(GameDir)/Bin64/System.IO.FileSystem.Watcher.dll</HintPath>
+		</Reference>
+		<Reference Include="System.IO.FileSystem.dll">
+			<HintPath>$(GameDir)/Bin64/System.IO.FileSystem.dll</HintPath>
+		</Reference>
+		<Reference Include="System.IO.IsolatedStorage.dll">
+			<HintPath>$(GameDir)/Bin64/System.IO.IsolatedStorage.dll</HintPath>
+		</Reference>
+		<Reference Include="System.IO.MemoryMappedFiles.dll">
+			<HintPath>$(GameDir)/Bin64/System.IO.MemoryMappedFiles.dll</HintPath>
+		</Reference>
+		<Reference Include="System.IO.Pipes.dll">
+			<HintPath>$(GameDir)/Bin64/System.IO.Pipes.dll</HintPath>
+		</Reference>
+		<Reference Include="System.IO.UnmanagedMemoryStream.dll">
+			<HintPath>$(GameDir)/Bin64/System.IO.UnmanagedMemoryStream.dll</HintPath>
+		</Reference>
+		<Reference Include="System.IO.dll">
+			<HintPath>$(GameDir)/Bin64/System.IO.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Linq.Expressions.dll">
+			<HintPath>$(GameDir)/Bin64/System.Linq.Expressions.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Linq.Parallel.dll">
+			<HintPath>$(GameDir)/Bin64/System.Linq.Parallel.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Linq.Queryable.dll">
+			<HintPath>$(GameDir)/Bin64/System.Linq.Queryable.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Linq.dll">
+			<HintPath>$(GameDir)/Bin64/System.Linq.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Memory.dll">
+			<HintPath>$(GameDir)/Bin64/System.Memory.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Net.Http.dll">
+			<HintPath>$(GameDir)/Bin64/System.Net.Http.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Net.NameResolution.dll">
+			<HintPath>$(GameDir)/Bin64/System.Net.NameResolution.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Net.NetworkInformation.dll">
+			<HintPath>$(GameDir)/Bin64/System.Net.NetworkInformation.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Net.Ping.dll">
+			<HintPath>$(GameDir)/Bin64/System.Net.Ping.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Net.Primitives.dll">
+			<HintPath>$(GameDir)/Bin64/System.Net.Primitives.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Net.Requests.dll">
+			<HintPath>$(GameDir)/Bin64/System.Net.Requests.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Net.Security.dll">
+			<HintPath>$(GameDir)/Bin64/System.Net.Security.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Net.Sockets.dll">
+			<HintPath>$(GameDir)/Bin64/System.Net.Sockets.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Net.WebHeaderCollection.dll">
+			<HintPath>$(GameDir)/Bin64/System.Net.WebHeaderCollection.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Net.WebSockets.Client.dll">
+			<HintPath>$(GameDir)/Bin64/System.Net.WebSockets.Client.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Net.WebSockets.dll">
+			<HintPath>$(GameDir)/Bin64/System.Net.WebSockets.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Numerics.Vectors.dll">
+			<HintPath>$(GameDir)/Bin64/System.Numerics.Vectors.dll</HintPath>
+		</Reference>
+		<Reference Include="System.ObjectModel.dll">
+			<HintPath>$(GameDir)/Bin64/System.ObjectModel.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Reflection.Extensions.dll">
+			<HintPath>$(GameDir)/Bin64/System.Reflection.Extensions.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Reflection.Metadata.dll">
+			<HintPath>$(GameDir)/Bin64/System.Reflection.Metadata.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Reflection.Primitives.dll">
+			<HintPath>$(GameDir)/Bin64/System.Reflection.Primitives.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Reflection.dll">
+			<HintPath>$(GameDir)/Bin64/System.Reflection.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Resources.Reader.dll">
+			<HintPath>$(GameDir)/Bin64/System.Resources.Reader.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Resources.ResourceManager.dll">
+			<HintPath>$(GameDir)/Bin64/System.Resources.ResourceManager.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Resources.Writer.dll">
+			<HintPath>$(GameDir)/Bin64/System.Resources.Writer.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Runtime.CompilerServices.Unsafe.dll">
+			<HintPath>$(GameDir)/Bin64/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Runtime.CompilerServices.VisualC.dll">
+			<HintPath>$(GameDir)/Bin64/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Runtime.Extensions.dll">
+			<HintPath>$(GameDir)/Bin64/System.Runtime.Extensions.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Runtime.Handles.dll">
+			<HintPath>$(GameDir)/Bin64/System.Runtime.Handles.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Runtime.InteropServices.RuntimeInformation.dll">
+			<HintPath>$(GameDir)/Bin64/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Runtime.InteropServices.dll">
+			<HintPath>$(GameDir)/Bin64/System.Runtime.InteropServices.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Runtime.Numerics.dll">
+			<HintPath>$(GameDir)/Bin64/System.Runtime.Numerics.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Runtime.Serialization.Formatters.dll">
+			<HintPath>$(GameDir)/Bin64/System.Runtime.Serialization.Formatters.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Runtime.Serialization.Json.dll">
+			<HintPath>$(GameDir)/Bin64/System.Runtime.Serialization.Json.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Runtime.Serialization.Primitives.dll">
+			<HintPath>$(GameDir)/Bin64/System.Runtime.Serialization.Primitives.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Runtime.Serialization.Xml.dll">
+			<HintPath>$(GameDir)/Bin64/System.Runtime.Serialization.Xml.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Runtime.dll">
+			<HintPath>$(GameDir)/Bin64/System.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Security.Claims.dll">
+			<HintPath>$(GameDir)/Bin64/System.Security.Claims.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Security.Cryptography.Algorithms.dll">
+			<HintPath>$(GameDir)/Bin64/System.Security.Cryptography.Algorithms.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Security.Cryptography.Csp.dll">
+			<HintPath>$(GameDir)/Bin64/System.Security.Cryptography.Csp.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Security.Cryptography.Encoding.dll">
+			<HintPath>$(GameDir)/Bin64/System.Security.Cryptography.Encoding.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Security.Cryptography.Primitives.dll">
+			<HintPath>$(GameDir)/Bin64/System.Security.Cryptography.Primitives.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Security.Cryptography.X509Certificates.dll">
+			<HintPath>$(GameDir)/Bin64/System.Security.Cryptography.X509Certificates.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Security.Principal.dll">
+			<HintPath>$(GameDir)/Bin64/System.Security.Principal.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Security.SecureString.dll">
+			<HintPath>$(GameDir)/Bin64/System.Security.SecureString.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Text.Encoding.CodePages.dll">
+			<HintPath>$(GameDir)/Bin64/System.Text.Encoding.CodePages.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Text.Encoding.Extensions.dll">
+			<HintPath>$(GameDir)/Bin64/System.Text.Encoding.Extensions.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Text.Encoding.dll">
+			<HintPath>$(GameDir)/Bin64/System.Text.Encoding.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Text.RegularExpressions.dll">
+			<HintPath>$(GameDir)/Bin64/System.Text.RegularExpressions.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Threading.Overlapped.dll">
+			<HintPath>$(GameDir)/Bin64/System.Threading.Overlapped.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Threading.Tasks.Extensions.dll">
+			<HintPath>$(GameDir)/Bin64/System.Threading.Tasks.Extensions.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Threading.Tasks.Parallel.dll">
+			<HintPath>$(GameDir)/Bin64/System.Threading.Tasks.Parallel.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Threading.Tasks.dll">
+			<HintPath>$(GameDir)/Bin64/System.Threading.Tasks.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Threading.Thread.dll">
+			<HintPath>$(GameDir)/Bin64/System.Threading.Thread.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Threading.ThreadPool.dll">
+			<HintPath>$(GameDir)/Bin64/System.Threading.ThreadPool.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Threading.Timer.dll">
+			<HintPath>$(GameDir)/Bin64/System.Threading.Timer.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Threading.dll">
+			<HintPath>$(GameDir)/Bin64/System.Threading.dll</HintPath>
+		</Reference>
+		<Reference Include="System.ValueTuple.dll">
+			<HintPath>$(GameDir)/Bin64/System.ValueTuple.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Xml.ReaderWriter.dll">
+			<HintPath>$(GameDir)/Bin64/System.Xml.ReaderWriter.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Xml.XDocument.dll">
+			<HintPath>$(GameDir)/Bin64/System.Xml.XDocument.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Xml.XPath.XDocument.dll">
+			<HintPath>$(GameDir)/Bin64/System.Xml.XPath.XDocument.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Xml.XPath.dll">
+			<HintPath>$(GameDir)/Bin64/System.Xml.XPath.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Xml.XmlDocument.dll">
+			<HintPath>$(GameDir)/Bin64/System.Xml.XmlDocument.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Xml.XmlSerializer.dll">
+			<HintPath>$(GameDir)/Bin64/System.Xml.XmlSerializer.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.Ansel.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.Ansel.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.Audio.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.Audio.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.Game.XmlSerializers.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.Game.XmlSerializers.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.Game.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.Game.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.Input.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.Input.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.Library.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.Library.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.Math.XmlSerializers.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.Math.XmlSerializers.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.Math.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.Math.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.Mod.Io.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.Mod.Io.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.NativeAftermath.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.NativeAftermath.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.NativeWrapper.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.NativeWrapper.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.Network.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.Network.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.Platform.Windows.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.Platform.Windows.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.Render.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.Render.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.Render11.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.Render11.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.Scripting.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.Scripting.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.Steam.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.Steam.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.UserInterface.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.UserInterface.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.XmlSerializers.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.XmlSerializers.dll</HintPath>
+		</Reference>
+		<Reference Include="VRage.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.dll</HintPath>
+		</Reference>
+		<Reference Include="netstandard.dll">
+			<HintPath>$(GameDir)/Bin64/netstandard.dll</HintPath>
+		</Reference>
+	</ItemGroup>
 </Project>
