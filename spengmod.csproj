@@ -3,6 +3,10 @@
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 	</PropertyGroup>
 
+	<ItemGroup>
+		<ProjectReference Include="util/util.csproj" />
+	</ItemGroup>
+
 	<PropertyGroup>
 		<GameDir>/home/aib/.local/share/Steam/SteamApps/common/SpaceEngineers</GameDir>
 	</PropertyGroup>
