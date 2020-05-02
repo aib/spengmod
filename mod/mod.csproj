@@ -4,7 +4,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="util/util.csproj" />
+		<ProjectReference Include="../util/util.csproj" />
 	</ItemGroup>
 
 	<PropertyGroup>
