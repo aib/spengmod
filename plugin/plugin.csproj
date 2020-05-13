@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<GameDir>$(HOME)/.local/share/Steam/SteamApps/common/SpaceEngineers</GameDir>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="VRage.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+</Project>
