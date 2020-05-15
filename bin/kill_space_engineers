@@ -1,0 +1,31 @@
+#!/bin/bash
+
+do_kill()
+{
+	local pid=$(pgrep SpaceEngineers)
+	if [ -z "$pid" ]; then
+		echo "Space Engineers not running" >&2
+		exit 1
+	fi
+
+	local ppid=$(ps -o ppid= -p $pid | tr -d '[:blank:]')
+	if [ "$ppid" == "1" ]; then
+		echo "Could not find parent process" >&2
+		exit 1
+	fi
+
+	descendants=""
+	find_descendants $ppid
+	kill -9 $pid $descendants $ppid
+}
+
+find_descendants()
+{
+	local children=$(ps -o pid= --ppid $1)
+	for pid in $children; do
+		find_descendants "$pid"
+		descendants="$descendants $pid"
+	done
+}
+
+do_kill
