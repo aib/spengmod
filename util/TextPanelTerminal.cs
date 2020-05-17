@@ -5,8 +5,7 @@ using Sandbox.ModAPI.Ingame;
 public
 class TextPanelTerminal
 {
-	public readonly IMyTextPanel display;
-
+	private readonly IMyTextPanel display;
 	private int maxLines;
 
 	public TextPanelTerminal(IMyTextPanel display, int lines = 1)
@@ -18,10 +17,10 @@ class TextPanelTerminal
 	public void setLines(int lines)
 	{
 		this.maxLines = lines;
-		refresh();
+		update();
 	}
 
-	public void refresh()
+	public void update()
 	{
 		var sb = new StringBuilder();
 		var lines = display.GetText().Split('\n');
@@ -36,6 +35,6 @@ class TextPanelTerminal
 	public void addLine(string line)
 	{
 		display.WriteText(line, true);
-		refresh();
+		update();
 	}
 }
