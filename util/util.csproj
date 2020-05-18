@@ -14,5 +14,8 @@
 		<Reference Include="VRage.Game.dll">
 			<HintPath>$(GameDir)/Bin64/VRage.Game.dll</HintPath>
 		</Reference>
+		<Reference Include="VRage.Math.dll">
+			<HintPath>$(GameDir)/Bin64/VRage.Math.dll</HintPath>
+		</Reference>
 	</ItemGroup>
 </Project>
